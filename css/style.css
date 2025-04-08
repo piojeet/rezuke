@@ -32,7 +32,8 @@ header .nav,
 .hero__container,
 .services__container,
 .process__container,
-.testimonials__container {
+.testimonials__container,
+.qualities__container {
     max-width: 1512px;
     width: 100%;
     margin: 0 auto;
@@ -188,7 +189,8 @@ header {
 
 .services__container,
 .process__container,
-.testimonials__container {
+.testimonials__container,
+.qualities__container {
     padding: 120px 5rem;
 }
 
@@ -501,4 +503,49 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 64px;
+}
+
+
+.qualities__container {
+    
+}
+
+.qualities__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.qualities__image img {
+    height: 100%;
+}
+
+.qualities {
+    position: relative;
+}
+
+.qualities__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.qualities__icon img {
+    height: 32px;
+    height: 32px;
+}
+
+.qualities__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 40px 0;
+}
+
+.qualities__text {
+    font-size: 20px;
+    font-family: var(--satoshi-light);
+    font-weight: 400;
+    color: var(--dark-text-color);
 }

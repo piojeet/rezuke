@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <title>Consult Me - Consulting Framer Template</title>
 </head>
 
@@ -224,10 +227,10 @@
                 <div class="testimonials__header">
                     <h2 class="testimonials__title same__heading2">Don’t just take my word for it</h2>
                     <div class="testimonials__controls">
-                        <button class="testimonials__btn testimonials__btn--prev">
+                        <button class="testimonials__btn testimonials__btn--prev swiper-btn-prev">
                             <img src="assets/chevron-left.svg" alt="img">
                         </button>
-                        <button class="testimonials__btn testimonials__btn--next">
+                        <button class="testimonials__btn testimonials__btn--next swiper-btn-next">
                             <img src="assets/chevron-right.svg" alt="img">
                         </button>
                     </div>
@@ -239,33 +242,139 @@
 
                     <!-- Testimonial Content -->
                     <div class="testimonial__slide">
-                        <div class="testimonial__content">
-                            <div class="testimonial__text">
-                                <div class="testimonial__stat">
-                                    <span class="testimonial__number">2x</span> <span
-                                        class="testimonial__stat-text">lower dropout rate</span>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial__content">
+                                        <div class="testimonial__text">
+                                            <div class="testimonial__stat">
+                                                <span class="testimonial__number">2x</span> <span
+                                                    class="testimonial__stat-text">lower dropout rate</span>
+                                            </div>
+                                            <p class="testimonial__description">
+                                                Etiam vitae tortor. Suspendisse enim turpis, dictum sed, iaculis a,
+                                                condimentum nec,
+                                                nisi. Morbi ac felis. Fusce convallis metus id felis luctus adipiscing.
+                                                Nulla porta
+                                                dolor.
+                                            </p>
+                                            <div class="testimonial__logo">
+                                                <img src="assets/Deliveroo2.svg" alt="img" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__image">
+                                            <img src="assets/fNcMyKR6JXkBlZwfXyLOmodsDc.webp" alt="img" loading="lazy">
+                                        </div>
+                                    </div>
                                 </div>
-                                <p class="testimonial__description">
-                                    Etiam vitae tortor. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec,
-                                    nisi. Morbi ac felis. Fusce convallis metus id felis luctus adipiscing. Nulla porta
-                                    dolor.
-                                </p>
-                                <div class="testimonial__logo">
-                                    <img src="assets/Deliveroo2.svg" alt="img" loading="lazy">
+                                <div class="swiper-slide">
+                                    <div class="testimonial__content">
+                                        <div class="testimonial__text">
+                                            <div class="testimonial__stat">
+                                                <span class="testimonial__number">2x</span> <span
+                                                    class="testimonial__stat-text">lower dropout rate</span>
+                                            </div>
+                                            <p class="testimonial__description">
+                                                Etiam vitae tortor. Suspendisse enim turpis, dictum sed, iaculis a,
+                                                condimentum nec,
+                                                nisi. Morbi ac felis. Fusce convallis metus id felis luctus adipiscing.
+                                                Nulla porta
+                                                dolor.
+                                            </p>
+                                            <div class="testimonial__logo">
+                                                <img src="assets/Deliveroo2.svg" alt="img" loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="testimonial__image">
+                                            <img src="assets/fNcMyKR6JXkBlZwfXyLOmodsDc.webp" alt="img" loading="lazy">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="testimonial__image">
-                                <img src="assets/fNcMyKR6JXkBlZwfXyLOmodsDc.webp" alt="img" loading="lazy">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+
+        </section>
+
+        <section class="qualities">
+            <div class="qualities__container">
+                <!-- Left Content -->
+                <div class="qualities__content">
+                    <h2 class="same__heading2 qualities__title">
+                        Been called good communicator, hustler, sometimes genius.
+                    </h2>
+                    <div class="qualities__list">
+                        <div class="qualities__item">
+                            <span class="qualities__icon">
+                                <img src="assets/Group 31.svg" alt="icon">
+                            </span>
+                            <div class="qualities__text">average response rate 1 hour</div>
+                        </div>
+                        <div class="qualities__item">
+                            <span class="qualities__icon">
+                                <img src="assets/Group 31.svg" alt="icon">
+                            </span>
+                            <div class="qualities__text">proven track of results</div>
+                        </div>
+                        <div class="qualities__item">
+                            <span class="qualities__icon">
+                                <img src="assets/Group 31.svg" alt="icon">
+                            </span>
+                            <div class="qualities__text">dedicated and honest</div>
+                        </div>
+                    </div>
+                    <div class="services__cta">
+                        <a href="#" class="same-btn lets__talk">About me</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Right Image -->
+            <div class="qualities__image">
+                <img src="assets/m0whxCj8GP9pbS23yaa6jp5WTdE.webp" alt="img" loading="lazy">
             </div>
         </section>
 
 
 
     </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 1000,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-btn-next",
+                prevEl: ".swiper-btn-prev",
+            },
+        });
+
+        function animateButton(btn) {
+            btn.style.transform = "scale(0.8)";
+            btn.style.transition = "transform 0.2s ease";
+
+            setTimeout(() => {
+                btn.style.transform = "scale(1)";
+            }, 200);
+        }
+
+        const nextBtn = document.querySelector(".swiper-btn-next");
+        const prevBtn = document.querySelector(".swiper-btn-prev");
+
+        nextBtn.addEventListener("click", () => animateButton(nextBtn));
+        prevBtn.addEventListener("click", () => animateButton(prevBtn));
+    </script>
+
 </body>
 
 </html>

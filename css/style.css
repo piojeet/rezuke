@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-color: #424BD0;
+    --dark-text-color: #282943;
+    --primery-color: #fff;
+    --light-color: rgba(40, 41, 67, 0.15);
+    --satoshi-regular: Satoshi-regular;
+}
+
+@font-face {
+    font-family: 'Satoshi-regular';
+    src: url('../fonts/7AHDUZ4A7LFLVFUIFSARGIWCRQJHISQP.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header .nav,
+.hero__container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 2rem;
+}
+
+header {
+    border-bottom: 1px solid var(--light-color);
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: var(--dark-text-color);
+    font-family: var(--satoshi-regular);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav__link-btn {
+    background: #424BD033;
+    color: var(--btn-color);
+}
+
+.same-btn {
+    padding: 9px 22px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--satoshi-regular);
+    font-size: 18px;
+}
+
+/* hero section */
+.hero__container {
+    padding: 0 5rem;
+}
+
+.hero__info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__logos {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.hero__image {
+    max-width: 577px;
+    width: 100%;
+}
+
+.hero__title {
+    font-size: 72px;
+    font-weight: 700;
+    color: var(--dark-text-color);
+    font-family: var(--satoshi-regular);
+    line-height: 122%;
+}
+
+.hero__info {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero__desc {
+    font-size: 24px;
+    font-family: var(--satoshi-regular);
+    font-weight: 500;
+    color: var(--dark-text-color);
+    line-height: 135%;
+}
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 16px;
+}
+
+.lets__talk {
+    background: var(--btn-color);
+    color: var(--primery-color);
+}
+
+.see__case {
+    color: var(--btn-color);
+}
+
+.hero__info-wrapper {
+    padding-top: 3rem;
+}
+
+.hero__clients {
+    padding: 5rem 0;
+}
+
+.hero__clients-title {
+    font-size: 24px;
+    font-family: var(--satoshi-regular);
+    color: var(--dark-text-color);
+    font-weight: 500;
+}
+
+.hero__logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.hero__logo img {
+    width: 35vw;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero__container {
+    position: relative;
+    z-index: 1;
+}

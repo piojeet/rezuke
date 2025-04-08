@@ -9,7 +9,9 @@
     --dark-text-color: #282943;
     --primery-color: #fff;
     --light-color: rgba(40, 41, 67, 0.15);
+    --para-lineheight: 130%;
     --satoshi-regular: Satoshi-regular;
+    --satoshi-light: Satoshi-light;
 }
 
 @font-face {
@@ -19,8 +21,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Satoshi-light';
+    src: url('../fonts/KFIAZD4RUMEZIYV6FQ3T3GP5PDBDB6JY.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 header .nav,
-.hero__container {
+.hero__container,
+.services__container {
     max-width: 1512px;
     width: 100%;
     margin: 0 auto;
@@ -167,4 +177,101 @@ header {
 .hero__container {
     position: relative;
     z-index: 1;
+}
+
+/* services section */
+.services {
+    background: #F9F9FF;
+}
+
+.services__container {
+    padding: 120px 5rem;
+}
+
+.same__heading2 {
+    font-size: 46px;
+    font-weight: 700;
+    font-family: var(--satoshi-regular);
+    color: var(--dark-text-color);
+}
+
+.services__container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.services__card {
+    padding: 40px 52px 40px 40px;
+    background: var(--primery-color);
+    border-radius: 12px;
+    border-bottom-right-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+
+.services__card-description {
+    font-size: 18px;
+    font-family: var(--satoshi-light);
+    font-weight: 400;
+    color: var(--dark-text-color);
+    line-height: var(--para-lineheight);
+    transition: all .3s ease-in-out;
+}
+
+.services__name {
+    font-size: 28px;
+    font-family: var(--satoshi-regular);
+}
+
+.services__card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.services__card-footer a {
+    font-family: var(--satoshi-regular);
+    text-decoration: none;
+    color: var(--btn-color);
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.services__card-footer a:hover {
+    text-decoration: underline;
+}
+
+.services__description {
+    font-size: 20px;
+    font-family: var(--satoshi-light);
+    line-height: var(--para-lineheight);
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 25px;
+}
+
+.services__card:hover {
+    background: var(--btn-color);
+    color: var(--primery-color);
+    transform: rotate(-3deg);
+    transform-origin: left bottom;
+}
+
+.services__card:hover .services__card-footer a {
+    color: var(--primery-color);
+}
+
+.services__card:hover .services__card-description {
+    color: var(--primery-color);
+}
+
+.services__icon img {
+    transition: all .3s ease-in-out;
+}
+
+.services__card:hover .services__icon img {
+    filter: invert(1);
 }

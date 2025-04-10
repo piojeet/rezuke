@@ -184,6 +184,16 @@ header {
     gap: 3vw;
 }
 
+.hero__badge {
+    position: relative;
+    transform-origin: left;
+}
+
+.hero__badge img {
+    white-space: nowrap;
+    width: 5rem;
+}
+
 .hero__image {
     max-width: 577px;
     width: 100%;
@@ -222,6 +232,11 @@ header {
     align-items: center;
     gap: 10px;
     padding-top: 16px;
+}
+
+.hero__buttons a {
+    display: inline-block;
+    position: relative;
 }
 
 .lets__about {
@@ -302,7 +317,7 @@ header {
     background: var(--primery-color);
     border-radius: 12px;
     border-bottom-right-radius: 100px;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
 }
 
 .services__card-description {
@@ -349,12 +364,12 @@ header {
     margin-bottom: 25px;
 }
 
-.services__card:hover {
+/* .services__card:hover {
     background: var(--btn-color);
     color: var(--primery-color);
     transform: rotate(-2deg);
     transform-origin: left bottom;
-}
+} */
 
 .services__card:hover .services__card-footer a {
     color: var(--primery-color);
@@ -615,6 +630,7 @@ header {
     right: 0;
     bottom: 0;
     height: 100%;
+    overflow: hidden;
 }
 
 .qualities__image img {
@@ -722,17 +738,17 @@ header {
     background: var(--primery-color);
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 30px 0px;
     border-radius: 12px 12px 100px;
-    transition: all .3s linear;
+    /* transition: all .3s linear; */
 }
+
+/* .case-studies__item:hover {
+    transform: translateY(-10px);
+} */
 
 .case-studies__item>a {
     padding: 40px 52px 40px 40px;
     display: block;
 
-}
-
-.case-studies__item:hover {
-    transform: translateY(-10px);
 }
 
 .case-studies__subtitle {
@@ -1235,7 +1251,7 @@ header {
 
     .site-footer__columns {
         flex-wrap: wrap;
-        gap: 5vw;
+        gap: 8vw;
     }
 
     .footer-contact {
@@ -1251,6 +1267,7 @@ header {
 
     .site-footer__credits {
         font-size: 14px;
+        text-align: center;
     }
 
     header .nav {
@@ -1338,5 +1355,17 @@ header {
 @media only screen and (max-width: 425px) {
     .btn-desk-nav {
         display: none;
+    }
+
+    .footer-contact__info {
+        padding: 20px 16px;
+    }
+
+    .testimonial__description {
+        font-size: 16px;
+    }
+
+    .same__heading2 {
+        text-align: center;
     }
 }

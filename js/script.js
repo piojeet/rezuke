@@ -21,6 +21,7 @@ const tl = gsap.timeline({
 // Animate these together
 tl.from('.hero__badge img', { scaleX: 0, opacity: 0, duration: 1, ease: 'power2.out' }, 0)
   .from('.hero__image', { y: 100, opacity: 0, duration: 1, ease: 'power2.out' }, 0)
+  .from('.hero__second-para', { y: 100, opacity: 0, duration: 1, ease: 'power2.out' }, 0)
 
   // Now animate sequentially
   .from('.hero__title', { y: 100, opacity: 0, duration: 1, ease: 'power2.out' }, 0)

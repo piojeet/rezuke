@@ -184,6 +184,12 @@ header {
     gap: 3vw;
 }
 
+.hero__second-para {
+    font-family: var(--satoshi-light);
+    color: var(--dark-text-color);
+    opacity: .8;
+}
+
 .hero__badge {
     position: relative;
     transform-origin: left;

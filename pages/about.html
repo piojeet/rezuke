@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Consult Me - Consulting Framer Template</title>
+
+    <style>
+        .container {
+            display: flex;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .container::before,
+        .container::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .container::before {
+            top: 0;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        }
+
+        .container::after {
+            bottom: 0;
+            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        }
+
+        .scroll-box {
+            width: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scroll-box .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .scroll-box img {
+            /* height: 100%; */
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero__info-wrapper-about {
+            display: grid;
+            grid-template-columns: 1fr .75fr;
+            gap: 5vw;
+        }
+
+        .hero__image-about {
+            position: relative;
+        }
+
+        .hero__info-about {
+            width: 100%;
+            padding: 120px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo">
+                <img src="../assets/download.svg" alt="img">
+            </div>
+
+            <div class="nav__menu">
+                <ul class="nav__list nav__list--desk">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Testimonials</a></li>
+                </ul>
+                <div class="btn-desk-nav">
+                    <a href="#" class="nav__link nav__link-btn same-btn hover__dark">Buy template</a>
+                </div>
+
+                <div class="menu__humbarger">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <ul class="nav__list nav__list--mob">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About me</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Testimonials</a></li>
+    </ul>
+
+    <main>
+        <section class="hero">
+            
+            <div class="hero__container">
+
+
+                <div class="hero__content">
+                    <div class="hero__info-wrapper-about">
+                        <div class="hero__info-about">
+
+                            <h1 class="hero__title">Passion to online world and <span
+                                    class="same__color">business</span> brought me here.</h1>
+                            <p class="hero__desc">
+                                Hey there! I’m John Parker. Digital business consultant focussed on online marketing and
+                                advertising.
+                            </p>
+                            <div class="qualities__list">
+                                <div class="qualities__item">
+                                    <span class="qualities__icon">
+                                        <img src="../assets/Group 31.svg" alt="icon">
+                                    </span>
+                                    <div class="qualities__text">average response rate 1 hour</div>
+                                </div>
+                                <div class="qualities__item">
+                                    <span class="qualities__icon">
+                                        <img src="../assets/Group 31.svg" alt="icon">
+                                    </span>
+                                    <div class="qualities__text">proven track of results</div>
+                                </div>
+                                <div class="qualities__item">
+                                    <span class="qualities__icon">
+                                        <img src="../assets/Group 31.svg" alt="icon">
+                                    </span>
+                                    <div class="qualities__text">dedicated and honest</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__image-about">
+                            <div class="container">
+                                <div class="scroll-box left" id="scrollLeft">
+                                    <div class="content">
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                    </div>
+                                </div>
+                                <div class="scroll-box right" id="scrollRight">
+                                    <div class="content">
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                        <img src="../assets/khscawI2QJmq73qupcTaUHiCno.avif" alt="img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="process">
+            <div class="process__container">
+                <h2 class="process__title same__heading2">Obvious yet proven process</h2>
+                <p class="process__subtitle">
+                    My simple yet powerful workflow to offer you the best results.
+                </p>
+
+                <div class="process__steps">
+                    <!-- Step 1 -->
+                    <div class="process__step process__step1">
+                        <div class="process__step-inner">
+                            <div class="process__step-number">1</div>
+                            <div class="process__linebar process__linebar-line1"><span><img
+                                        src="../assets/caret-right-fill.svg" alt="img"></span></div>
+                            <div class="process__step-header">
+                                <span class="process__step-name">Intro call</span>
+                                <span class="process__step-duration">10 min</span>
+                            </div>
+                            <p class="process__step-description">
+                                A brief conversation to understand your needs and goals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="process__step process__step2">
+                        <div class="process__step-inner">
+                            <div class="process__step-number">2</div>
+                            <div class="process__linebar"><span><img src="../assets/caret-right-fill.svg" alt="img"></span>
+                            </div>
+                            <div class="process__step-header">
+                                <span class="process__step-name">Research</span>
+                                <span class="process__step-duration">7 days</span>
+                            </div>
+                            <p class="process__step-description">
+                                In-depth analysis to gather insights, data, and relevant information for your project.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="process__step">
+                        <div class="process__step-inner">
+                            <div class="process__step-number">3</div>
+                            <div class="process__linebar process__linebar3"><span><img src="../assets/caret-right-fill.svg"
+                                        alt="img"></span></div>
+                            <div class="process__step-header process__step-header3">
+                                <span class="process__step-name">Consulting & feedback</span>
+                                <span class="process__step-duration">14 days</span>
+                            </div>
+                            <p class="process__step-description process__step-description3">
+                                Mauris sollicitudin fermentum libero. Vivamus aliquet elit ac nisl. In hac habitasse
+                                platea dictumst. Vivamus aliquet elit ac nisl. Mauris sollicitudin fermentum libero.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="services__cta schedule__cta">
+                    <a href="#" class="same-btn lets__about">Schedule intro call</a>
+                </div>
+            </div>
+        </section>
+
+       
+
+
+
+
+        <section class="case-studies">
+            <div class="case-studies__container">
+                <!-- Header -->
+                <div class="case-studies__header">
+                    <h2 class="case-studies__title same__heading2">My featured case studies</h2>
+                    <div class="services__cta">
+                        <a href="#" class="same-btn hover__dark">See all case studies</a>
+                    </div>
+                </div>
+
+                <!-- Case Study Items -->
+                <div class="case-studies__grid">
+                    <div class="case-studies__item">
+                        <a href="">
+                            <div class="case-studies__logo"><img src="../assets/Deliveroo2.svg" alt="img"></div>
+                            <div class="global-clients__stat">
+                                <span class="global-clients__number">48</span>
+                                <span class="global-clients__label">International clients</span>
+                            </div>
+                            <h3 class="case-studies__subtitle">How I improved Delivero onboarding experience</h3>
+                            <p class="case-studies__desc">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                                enim. Vestibulum fringilla pede sit amet augue...</p>
+                            <div class="case-studies__link">
+                                <div>Read more</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="case-studies__item">
+                        <a href="">
+                            <div class="case-studies__logo"><img src="../assets/fo7a4KNgb309qst675xrI3nSI.svg" alt="img">
+                            </div>
+                            <div class="global-clients__stat">
+                                <span class="global-clients__number">48</span>
+                                <span class="global-clients__label">International clients</span>
+                            </div>
+                            <h3 class="case-studies__subtitle">Helping Lorify to add new features that will attract
+                                millenials</h3>
+                            <p class="case-studies__desc">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                                enim. Vestibulum fringilla pede sit amet augue...</p>
+                            <div class="case-studies__link">
+                                <div>Read more</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="case-studies__item">
+                        <a href="#">
+                            <div class="case-studies__logo"><img src="../assets/4HCb1ctB1tzvAVjQzEJ3eE4VzI.svg" alt="img">
+                            </div>
+                            <div class="global-clients__stat">
+                                <span class="global-clients__number">48</span>
+                                <span class="global-clients__label">International clients</span>
+                            </div>
+                            <h3 class="case-studies__subtitle">Identifying cost saving opportunities for KM Ipsum</h3>
+                            <p class="case-studies__desc">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
+                                enim. Vestibulum fringilla pede sit amet augue...</p>
+                            <div class="case-studies__link">
+                                <div>Read more</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="contact-cta__container">
+                <!-- Icon -->
+                <div class="contact-cta__icon">
+                    <img src="../assets/Group 3 (1).svg" alt="img">
+                </div>
+
+                <!-- Heading -->
+                <h2 class="same__heading2 contact-cta__heading">Need help? <br>Let’s talk today!</h2>
+
+                <!-- Paragraph -->
+                <p class="contact-cta__text">Join my international network of successful clients.</p>
+
+                <!-- Call to Action -->
+                <div class="services__cta home__contact-btn">
+                    <a href="#" class="same-btn">Schedule intro call</a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__container">
+
+            <!-- Footer Links -->
+            <div class="site-footer__columns">
+                <!-- Column: Main Pages (repeated) -->
+                <div class="footer-column">
+                    <h3 class="footer-column__title">Main pages</h3>
+                    <ul class="footer-column__list">
+                        <li><a href="#">Home (sales)</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Case studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column__title">Main pages</h3>
+                    <ul class="footer-column__list">
+                        <li><a href="#">Home (sales)</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Case studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column__title">Main pages</h3>
+                    <ul class="footer-column__list">
+                        <li><a href="#">Home (sales)</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Case studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-column__title">Main pages</h3>
+                    <ul class="footer-column__list">
+                        <li><a href="#">Home (sales)</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Case studies</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <div class="footer-contact__info">
+                        <div class="footer-contact__title">Let's talk</div>
+                        <div class="footer-contact__details">
+                            <a href="mailto:templates@wavesdesign.io"><img src="../assets/send-mail.svg" alt="img">
+                                templates@wavesdesign.io</a>
+                            <a href="tel:+1 800 000 000"><img src="../assets/phone.svg" alt="img"> +1 800 000 000</a>
+                            <a href="https://www.google.com/maps?q=Your+Location+Here" target="_blank">
+                                <img src="../assets/pin-alt.svg" alt="img"> Califronia, Santa Monica
+                            </a>
+                        </div>
+                        <div class="footer-contact__socials">
+                            <a href="#"><img src="../assets/twitter.svg" alt="img"></a>
+                            <a href="#"><img src="../assets/linkedin.svg" alt="img"></a>
+                            <a href="#"><img src="../assets/telegram.svg" alt="img"></a>
+                            <a href="#"><img src="../assets/instagram.svg" alt="img"></a>
+                            <a href="#"><img src="../assets/youtube.svg" alt="img"></a>
+                        </div>
+                    </div>
+                    <div class="services__cta">
+                        <a href="#" class="same-btn lets__about">About me</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="site-footer__bottom">
+                <div class="site-footer__logo"><img src="../assets/download.svg" alt="img"></div>
+                <p class="site-footer__credits">
+                    Template designed by <a href="#">Wavesdesign</a>, powered by no-code tool Framer
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+        integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/script.js"></script>
+
+    <script>
+        function startInfiniteScroll(element, speed, direction = 'up') {
+            const content = element.querySelector('.content');
+            const contentHeight = content.offsetHeight / 2; // because we use 2 images
+            let translateY = direction === 'up' ? 0 : -contentHeight;
+
+            function scroll() {
+                translateY += (direction === 'up' ? -1 : 1) * speed;
+
+                if (direction === 'up' && Math.abs(translateY) >= contentHeight) {
+                    translateY = 0;
+                } else if (direction === 'down' && translateY >= 0) {
+                    translateY = -contentHeight;
+                }
+
+                content.style.transform = `translateY(${translateY}px)`;
+                requestAnimationFrame(scroll);
+            }
+
+            scroll();
+        }
+
+        // Start scrolling after images load
+        window.addEventListener('load', () => {
+            startInfiniteScroll(document.getElementById('scrollLeft'), 0.5, 'up');
+            startInfiniteScroll(document.getElementById('scrollRight'), 0.5, 'down');
+        });
+    </script>
+
+
+</body>
+
+</html>

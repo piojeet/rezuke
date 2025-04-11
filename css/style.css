@@ -42,7 +42,9 @@ header .nav,
 .global-clients__container,
 .case-studies__container,
 .contact-cta__container,
-.site-footer__container {
+.site-footer__container,
+.values__container,
+.stats__container {
     max-width: 1512px;
     width: 100%;
     margin: 0 auto;
@@ -302,7 +304,9 @@ header {
 .global-clients__container,
 .case-studies__container,
 .contact-cta__container,
-.site-footer__container {
+.site-footer__container,
+.values__container,
+.stats__container {
     padding: 120px 5rem;
 }
 
@@ -972,6 +976,99 @@ header {
 
 .same__color {
     color: var(--btn-color);
+}
+
+
+.values__section {
+    background: var(--bg-light-color);
+}
+
+.values__list {
+    background: var(--primery-color);
+    margin: 56px 0;
+    padding: 16px 80px;
+}
+
+.values__item {
+    padding: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.values__heading {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: var(--satoshi-regular);
+    color: var(--dark-text-color);
+}
+
+.values__text {
+    font-family: var(--satoshi-light);
+    color: var(--dark-text-color);
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 340px;
+    width: 100%;
+}
+
+.values__item-hr {
+    border-bottom: 1px solid var(--light-color);
+}
+
+.values__title,
+.values__cta,
+.stats__title {
+    text-align: center;
+}
+
+
+.stats__section {
+    background: var(--bg-light-color);
+}
+
+.stats__grid {
+    margin: 48px 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+}
+
+.stats__item {
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 30px 0px;
+    background: var(--primery-color);
+}
+
+.stats__item-br-bl {
+    border-radius: 12px 12px 12px 100px;
+}
+
+.stats__item-br-tr {
+    border-radius: 12px 100px 12px 12px;
+}
+
+.stats__label {
+    font-family: var(--satoshi-regular);
+    color: var(--dark-text-color);
+    opacity: 50%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.stats__description {
+    max-width: 435px;
+    width: 100%;
+    margin-left: auto;
+    font-family: var(--satoshi-light);
+    font-size: 20px;
+    color: var(--para-lineheight);
+    color: var(--dark-text-color);
 }
 
 

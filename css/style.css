@@ -2185,3 +2185,14 @@ header {
         width: calc(100% - 3rem);
     }
 }
+
+
+@media only screen and (min-width: 3000px) {
+    .hero__logo {
+        height: 100%;
+    }
+
+    .hero__logo img {
+        height: 100%;
+    }
+}

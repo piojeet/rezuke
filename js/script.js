@@ -200,3 +200,114 @@ gsap.from('.contact-cta__container', {
     // markers: true,
   }
 })
+
+gsap.from('.contact__info', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.contact__info',
+    start: 'top 80%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+gsap.from('.qualities__list-about', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.qualities__list-about',
+    start: 'top 80%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+gsap.from('.contact__form-container', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.contact__form-container',
+    start: 'top 80%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+gsap.utils.toArray('.faq__item').forEach(item => {
+  const ti= gsap.timeline({
+    scrollTrigger: {
+      trigger: item,
+      start: 'top 90%',
+      toggleActions: 'play none none none',
+      // markers: true
+    }
+  });
+
+  ti.from(item, {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    ease: 'power2.out'
+  });
+});
+
+
+gsap.from('.values__title', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.values__container',
+    start: 'top 90%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+
+gsap.from('.values__list', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.values__list',
+    start: 'top 90%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+
+gsap.from('.values__cta', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.values__cta',
+    start: 'top 90%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})
+
+
+gsap.utils.toArray('.stats__item, .stats__description').forEach((item, i) => {
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: item,
+      start: 'top 90%',
+      toggleActions: 'play none none none',
+      // markers: true
+    }
+  });
+
+  tl.from(item, {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    delay: i * 0.2, // delay based on index
+    ease: 'power2.out'
+  });
+});
+
+gsap.from('.stats__title', {
+  y: 100, opacity: 0, duration: 1, ease: 'power2.out',
+  scrollTrigger: {
+    trigger: '.stats__title',
+    start: 'top 90%',
+    toggleActions: 'play none none none',
+    // markers: true,
+  }
+})

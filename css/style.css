@@ -1071,6 +1071,72 @@ header {
     color: var(--dark-text-color);
 }
 
+.container {
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    gap: 20px;
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.container::before {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.container::after {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.scroll-box {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll-box .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.scroll-box img {
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero__info-wrapper-about {
+    display: grid;
+    grid-template-columns: 1fr .75fr;
+    gap: 5vw;
+}
+
+.hero__image-about {
+    position: relative;
+}
+
+.hero__info-about {
+    width: 100%;
+    padding: 120px 0;
+}
+
 
 @media only screen and (max-width: 1024px) {
     .hero__title {
@@ -1116,7 +1182,9 @@ header {
     .global-clients__container,
     .case-studies__container,
     .contact-cta__container,
-    .site-footer__container {
+    .site-footer__container,
+    .values__container,
+    .stats__container {
         padding: 80px 1.5rem;
     }
 
@@ -1436,6 +1504,52 @@ header {
         display: flex;
         cursor: pointer;
     }
+
+    .hero__info-wrapper-about {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__image-about {
+        height: 90vw;
+    }
+
+    .hero__info-about {
+        padding: 80px 0;
+        padding-bottom: 40px;
+    }
+
+    .values__item {
+        padding: 40px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .values__list {
+        padding: 16px 30px;
+        border-radius: 12px 100px 12px 100px;
+    }
+
+    .values__heading {
+        font-size: 23px;
+    }
+    
+    .values__text {
+        font-size: 16px;
+        max-width: inherit;
+        width: 100%;
+    }
+
+    .stats__grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .stats__description {
+        font-size: 16px;
+    }
+
+    .hero__desc {
+        margin-top: 10px;
+    }
 }
 
 
@@ -1456,6 +1570,12 @@ header {
 
     .footer-contact__info {
         border-radius: 12px 12px 76px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .stats__grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

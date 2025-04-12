@@ -9,71 +9,7 @@
     <title>Consult Me - Consulting Framer Template</title>
 
     <style>
-        .container {
-            display: flex;
-            height: 100%;
-            overflow: hidden;
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            gap: 20px;
-        }
-
-        .container::before,
-        .container::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 80px;
-            z-index: 2;
-            pointer-events: none;
-        }
-
-        .container::before {
-            top: 0;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-        }
-
-        .container::after {
-            bottom: 0;
-            background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-        }
-
-        .scroll-box {
-            width: 50%;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .scroll-box .content {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .scroll-box img {
-            /* height: 100%; */
-            width: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .hero__info-wrapper-about {
-            display: grid;
-            grid-template-columns: 1fr .75fr;
-            gap: 5vw;
-        }
-
-        .hero__image-about {
-            position: relative;
-        }
-
-        .hero__info-about {
-            width: 100%;
-            padding: 120px 0;
-        }
+        
     </style>
 </head>
 

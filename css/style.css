@@ -1326,6 +1326,7 @@ header {
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
+    border-radius: 12px;
 }
 
 .hero__info-wrapper-about {
